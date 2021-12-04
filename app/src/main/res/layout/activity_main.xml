@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--
+    <TextView
+        android:id="@+id/textViewTop"
+        style="@style/CustomFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="Hello"
+        android:textSize="24sp"/> -->
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/countdownView"
+        style="@style/CustomFont"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="-64dp"
+        android:elevation="8dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMillisecond="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:suffixDay="d"
+        app:suffixGravity="bottom"
+        app:suffixHour="h"
+        app:suffixMillisecond="ms"
+        app:suffixMinute="m"
+        app:suffixSecond="s"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="12sp"
+        app:timeBgRadius="4dp"
+        app:timeBgColor="@color/colorAccent"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="32sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/CustomFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/countdownView"
+        android:text="Countdown to New Year"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:id="@+id/textViewContent"
+        style="@style/CustomFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="DatePicker"
+        android:layout_below="@+id/textView"
+        android:textSize="48sp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+         />
+    
+    <Button
+        android:id="@+id/bntDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Picker"
+        android:layout_margin="32dp"
+        android:textColor="#fff"
+        android:background="@drawable/rounded"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+<!--
+    <ImageView
+        android:layout_width="524dp"
+        android:layout_height="370dp"
+        android:background="@drawable/clip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mycountdown"
+        app:layout_constraintVertical_bias="0.157" />  -->
+
+</RelativeLayout>
